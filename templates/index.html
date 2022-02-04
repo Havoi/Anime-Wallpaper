@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -12,52 +13,61 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Anime Wallpaper</title>
   </head>
   <body>
-    <img src="{{ photo_src }}" alt="NOT FOUND" class="img" />
+    <img src="{{ photo_src }}" alt="IMAGE" class="img" />
 
     <div class="butt">
-      <a
-        href="{{ photo_src }}"
-        
-        download="GFG"
-      >
-        <button type="button" class="btn btn-primary">Download</button>
+      <a>
+        <button
+          onclick="window.open('https://github.com/Havoi', '_blank');"
+          type="button"
+          class="btn btn-primary"
+        >
+          Github
+        </button>
       </a>
-      <a href=''>
-        <button class="btn btn-success" type="button">NEXT</button>
+      <a href="">
+        <button class="btn btn-success" type="button">
+          &#8635;
+        </button>
       </a>
       <a>
         <button
-          class="btn btn-info"
-          onclick="window.open('/image/{{photo}}', '_blank');"
+          class="btn btn-primary"
+          onclick="window.open('{{download_url}}', '_blank');"
           type="button"
         >
-          Full View
+          High Res
         </button>
       </a>
     </div>
 
     <style>
+      body{
+        background-color: rgba(0, 0, 0, 0.432) !important;
+      }
       img {
-        width: auto;
-        height: 90vh;
+        max-width: 90vh;
+        max-height: 90vh;
         display: block;
         margin: auto;
-        margin-top:1rem;
+        margin-top: 1rem;
       }
       .butt {
-        
         justify-content: center;
         display: flex;
       }
-      a{
+      a {
         height: 25px;
         margin-top: 0.5rem;
-        margin-right:1rem;
+        margin-right: 1rem;
       }
-      
     </style>
     <!-- JavaScript Bundle with Popper -->
     <script
