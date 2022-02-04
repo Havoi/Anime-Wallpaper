@@ -1,5 +1,5 @@
 # Anime-Wallpaper
-Anime Wallpaper web app having More than 2000 unique Wallpapers
-
-
-data.json contains Google drive ids of the images   
+create a cloudinary account and upload your images in there     
+Then With cloudinary Admin API get yo images details in a file named man.json    
+Then Modify the cloudinary Config in app.py     
+You are all set Run app.py     
